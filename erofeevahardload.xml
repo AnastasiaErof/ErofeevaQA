@@ -1,0 +1,2761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R416</id>
+	<name>ErofeevaHardload</name>
+	<description></description>
+	<config></config>
+	<createdon>2022-11-23T14:13:42Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>60</percent>
+			<count>30</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>4</percent>
+			<count>2</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>36</percent>
+			<count>18</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Shishkin</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non-Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Гудим</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нефункционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочные тесты</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Driga</name>
+		<description>RomSanich</description>
+										<sections>
+		<section>
+		<name>functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>non-functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>kolesnikov</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Не функционал</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Безопасность</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Негативные тесты</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Boiarshinov</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non-Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Erofeeva</name>
+		<description></description>
+						<tests>
+																											<test>
+				<id>T58533</id>
+				<title>Юзкейс 1. Копирование</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Подготовить тестовые данные и папки
+- Тестовыми данными являются файлы, с помощью которых мы будем проверять программу
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Нажать на кнопку с тремя точками наверху, чтобы добавить тестовые данные
+
+![](index.php?/attachments/get/2389)
+
+</content><expected>Откроется форма выбора папки
+
+![](index.php?/attachments/get/2496)
+
+
+</expected></step>
+<step>
+<index>2</index><content>В форме найти папку, в которой лежат тестовые данные. Нажать левой кнопкой мыши на нужные для тест-кейса тестовые данные, затем нажать кнопку &quot;Открыть&quot; или дважды щелкнуть по нужному файлу
+
+![](index.php?/attachments/get/2497)
+
+Повторить шаг несколько раз, если для проведения теста используется несколько тестовых данных</content><expected>Тестовые данные добавятся в программу hardload
+
+![](index.php?/attachments/get/2499)
+
+
+
+</expected></step>
+<step>
+<index>3</index><content>Нажать на кнопку с тремя точками снизу, чтобы выбрать папку, в которую нужно скопировать тестовые данные
+
+![](index.php?/attachments/get/2500)
+</content><expected>Откроется форма выбора папки
+
+![](index.php?/attachments/get/2421)
+</expected></step>
+<step>
+<index>4</index><content>В форме найти и выбрать нужную папку, нажать &quot;OK&quot;
+
+![](index.php?/attachments/get/2501)
+
+
+</content><expected>Путь до папки пропишется в программе hardload внизу
+
+![](index.php?/attachments/get/2502)
+
+</expected></step>
+<step>
+<index>5</index><content>Выбрать тестовые данные внутри программы, нажав на пустой квадратик рядом со строкой с адресом и названием файла тестовых данных</content><expected>В квадрате появится галочка
+
+![](index.php?/attachments/get/2504)
+</expected></step>
+<step>
+<index>6</index><content>Нажать на кнопку начала копирования (зеленый треугольник)
+
+![](index.php?/attachments/get/2505)
+
+</content><expected>Тестовые данные скопируются в выбранную папку
+
+![](index.php?/attachments/get/2507)
+
+![](index.php?/attachments/get/2506)
+
+![](index.php?/attachments/get/2510)
+
+![](index.php?/attachments/get/2511)
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3211</caseid>
+								<status>Untested</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																		<changes>
+									</changes>
+			</test>
+																														<test>
+				<id>T58534</id>
+				<title>Юзкейс 2. Удаление</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Подготовить тестовые данные и папки
+- Тестовыми данными являются файлы, с помощью которых мы будем проверять программу</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы добавятся в программу</expected></step>
+<step>
+<index>2</index><content>Выбрать тестовые данные внутри программы, нажав на строку с адресом и названием тестовых данных левой кнопкой мыши.
+
+Повторить шаг несколько раз, зажав клавишу Ctrl, если для проведения теста используется несколько тестовых данных
+
+Если для проведения теста используются несколько тестовых данных подряд, нажать на первую нужную строку, зажать Shift и нажать на последнюю нужную строку</content><expected>Строка тестовых данных станет синей
+
+![](index.php?/attachments/get/2515)
+</expected></step>
+<step>
+<index>3</index><content>Нажать на кнопку удаления файлов (красный крестик)
+
+![](index.php?/attachments/get/2516)
+</content><expected>Откроется окно с подтверждением действия
+
+![](index.php?/attachments/get/2517)
+</expected></step>
+<step>
+<index>4</index><content>В открывшемся окне с подтверждением действия нажать кнопку &quot;Да&quot;
+
+![](index.php?/attachments/get/2518)
+</content><expected>Тестовые данные удалятся из программы
+
+![](index.php?/attachments/get/2519)
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3226</caseid>
+								<status>Untested</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																		<changes>
+									</changes>
+			</test>
+								</tests>
+								<sections>
+		<section>
+		<name>Нефункциональные тесты</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T58581</id>
+				<title>Локализация</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Открыть программу</content><expected>Интерфейс программы и подсказки будут на одном языке</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3250</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>17</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:14:41Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>17</elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58582</id>
+				<title>Наличие возможности перертащить файлы в программу</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Открыть папку с файлами, выбрать нужные файлы, выделив их левой кнопкой мыши, или нажав на первый нужный файл, зажав Shift и нажав на последний нужный файл или выбрать каждый, зажав клавишу Ctrl</content><expected>Выделенные файлы можно будет перетащить в программу, захватив их мышкой</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3402</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>32</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:16:03Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>32</elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58579</id>
+				<title>Наличие возможности выбора нескольких файлов для добавления в программу</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаг 1 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Откроется форма для выбора файла</expected></step>
+<step>
+<index>2</index><content>В форме найти папку, в которой лежат тестовые данные. </content><expected>Можно выбрать несколько файлов с помощью клавиши Ctrl, Shift или зажав левую кнопку мыши и протянув ею от первого нужного файла до последнего.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3248</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>62</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:17:20Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>62</elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58578</id>
+				<title>Наличие возможность сразу скопировать файлы, которые добавила в программу</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-4 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Путь до папки пропишется в программе hardload внизу</expected></step>
+<step>
+<index>2</index><content>Нажать на кнопку начала копирования (зеленый треугольник)</content><expected>Тестовые данные скопируются в выбранную папку</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3247</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>17</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:18:19Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed>17</elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58580</id>
+				<title>Наличие возможности выбрать все файлы для копирования</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файлы:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-4 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Путь до папки пропишется в программе hardload внизу</expected></step>
+<step>
+<index>2</index><content>Выбрать все тестовые данные внутри программы</content><expected>Есть возможность выбрать все файлы с помощью одной кнопки или галочки &quot;выбрать всё&quot; или нажав галочку на первом нужном файле, зажав Shift и нажав на галочку на последнем нужном файле</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3249</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:18:59Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Функциональные тесты</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Позитивные</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T58535</id>
+				<title>Удаление файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 2. Удаление&quot;</content><expected>Файл удалится из списка в программе</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3194</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:20:15Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58540</id>
+				<title>Копирование файла</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым</expected>
+									</custom>
+												<caseid>C3213</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:21:22Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58542</id>
+				<title>Удаление файла после копирования</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файл:
+
+- &quot;png.png&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл скопируется</expected></step>
+<step>
+<index>2</index><content>Выполнить шаги 2-3 юзкейса &quot;Юзкейс 2. Удаление&quot;
+
+</content><expected>Файл удалится из списка в программе</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3217</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:21:50Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58539</id>
+				<title>Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3198</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:36:48Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment>Программа скопировала файл и подвисла, но чуть позже смогла справиться с таким объемом</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58538</id>
+				<title>Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3197</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:40:05Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-23T14:39:54Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58548</id>
+				<title>Добавление файлов в два этапа</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные 
+
+Файлы:
+
+- &quot;docx.docx&quot;
+- &quot;pdf.pdf&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot; с файлом &quot;docx.docx&quot;</content><expected>Файл добавится в программу</expected></step>
+<step>
+<index>2</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot; с файлом &quot;pdf.pdf&quot;</content><expected>Файл добавится в программу</expected></step>
+<step>
+<index>3</index><content>Выполнить оставшиеся шаги юзкейса &quot;Юзкейс 1. Копирование&quot; с обоими файлами</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3255</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:01:35Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T14:01:33Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Я поняла, что это проверяется другим тестом.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58549</id>
+				<title>Копирование файлов в два этапа</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные 
+
+Файлы:
+
+- &quot;xlsx.xlsx&quot;
+- &quot;txt.txt&quot;
+- &quot;презентация.pptx&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-4 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы добавятся в программу, папка выберется</expected></step>
+<step>
+<index>2</index><content>Выполнить шаги 5-6 юзкейса &quot;Юзкейс 1. Копирование&quot; с файлами &quot;xlsx.xlsx&quot;, &quot;txt.txt&quot;
+</content><expected>Файлы скопируются неповреждёнными</expected></step>
+<step>
+<index>3</index><content>Выполнить шаги 5-6 юзкейса &quot;Юзкейс 1. Копирование&quot; с файлом &quot;презентация.pptx&quot;</content><expected>Файл скопируется неповреждённым</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3306</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-23T14:45:35Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58537</id>
+				<title>Удаление нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+
+Тестовые данные
+
+Файлы:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 2. Удаление&quot;</content><expected>Файлы удалятся из списка в программе</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3196</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:29:22Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T13:29:10Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Файлы удаляются через один
+
+![](index.php?/attachments/get/2861)
+
+![](index.php?/attachments/get/2862)
+</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58541</id>
+				<title>Удаление нескольких файлов выборочно из списка</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+
+Тестовые данные
+
+Файлы (для выполнения этого тест-кейса добавлять в предложенном порядке):
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы добавятся в программу</expected></step>
+<step>
+<index>2</index><content>Выполнить шаги 2-3 юзкейса &quot;Юзкейс 2. Удаление&quot; с условием: при выполнении 2 шага выделить каждый второй файл.</content><expected>Выбранные файлы удалятся, невыбранные файлы останутся</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3216</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:34:36Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T13:34:33Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Из-за того, что файлы удаляются через один, если выбрать их через один, они удаляются нормально</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58536</id>
+				<title>Копирование нескольких файлов разного формата</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файлы:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файлы скопируются неповреждёнными</expected>
+									</custom>
+												<caseid>C3195</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:39:28Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T13:39:25Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа чуть-чуть подвисла, но все скинула</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58543</id>
+				<title>Удаление нескольких файлов после копирования</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файлы:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются</expected></step>
+<step>
+<index>2</index><content>Выполнить шаги 2-3 юзкейса &quot;Юзкейс 2. Удаление&quot;</content><expected>Файлы удалятся</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3218</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:56:02Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58544</id>
+				<title>! C:\ -&gt; D:\ Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл скопируется неповреждённым</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3229</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:59:12Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58550</id>
+				<title>C:\ -&gt; D:\ Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3311</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:15:20Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58551</id>
+				<title>C:\ -&gt; D:\ Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3312</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:16:23Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58546</id>
+				<title>C:\ -&gt; D:\ Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файлы:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3231</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:45:42Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T13:45:39Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Я делала после тест-кейса &quot;Копирование нескольких файлов разного формата&quot;, и оказалось, что программа не дает выбрать другую папку после произошедшего копирования, то есть она открывает окошко, и даже, вроде как дает возможность выбрать папку, но, когда выберешь ее, она остается прежней, поэтому я вписала адрес вручную, и это, на удивление, сработало</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58558</id>
+				<title>D:\ Добавление в программу файлов с диска D</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл добавится в программу</expected>
+									</custom>
+												<caseid>C3345</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:18:43Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58545</id>
+				<title>! D:\ -&gt; C:\ Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл скопируется неповреждённым</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3230</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:19:08Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58552</id>
+				<title>D:\ -&gt; C:\ Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3317</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:29:59Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58553</id>
+				<title>D:\ -&gt; C:\ Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3318</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:27:02Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58547</id>
+				<title>D:\ -&gt; C:\ Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3232</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:34:10Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58554</id>
+				<title>! C:\ -&gt; E:\ Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from 
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл скопируется неповреждённым</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3319</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:59:20Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58555</id>
+				<title>C:\ -&gt; E:\ Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from 
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3320</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:05:14Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Программа серьезно подзагрузилась, и, да, файл перекинулся, но он стал тупить</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58556</id>
+				<title>C:\ -&gt; E:\ Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from 
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3321</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:17:11Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58557</id>
+				<title>C:\ -&gt; E:\ Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from 
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3322</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T13:49:31Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58571</id>
+				<title>E:\ Добавление в программу файлов со съемного диска E</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;
+
+</steps>
+										<expected>Файл добавится в программу</expected>
+									</custom>
+												<caseid>C3358</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:39:19Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58559</id>
+				<title>! E:\ -&gt; C:\ Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл скопируется неповреждённым</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3346</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:40:38Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58560</id>
+				<title>E:\ -&gt; C:\ Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3347</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:00:39Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T15:00:35Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа зависла при копировании, файл зависает при открытии</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58561</id>
+				<title>E:\ -&gt; C:\ Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3348</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:41:11Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58562</id>
+				<title>E:\ -&gt; C:\ Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3349</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:20:15Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T15:18:07Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа немного подвисла, но файлы скинулись</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58563</id>
+				<title>! D:\ -&gt; E:\ Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл скопируется неповреждённым</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3350</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:20:29Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58564</id>
+				<title>D:\ -&gt; E:\ Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3351</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:25:28Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58565</id>
+				<title>D:\ -&gt; E:\ Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3352</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:21:47Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58566</id>
+				<title>D:\ -&gt; E:\ Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: D:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3353</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:37:47Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T14:37:44Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа немного зависла, но файлы скинулись целыми</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58567</id>
+				<title>! E:\ -&gt; D:\ Копирование файла</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3354</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:01:45Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58568</id>
+				<title>E:\ -&gt; D:\ Копирование файла большого размера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл: 
+
+- &quot;большой файл.mkv&quot; размером 8,52 Гб</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3355</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:08:10Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T15:08:06Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа зависла при копировании, файл зависает при открытии</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58569</id>
+				<title>E:\ -&gt; D:\ Копирование файла с длинным названием</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;длинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинноеназваниедлинн.txt&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, программа не зависнет</expected>
+									</custom>
+												<caseid>C3356</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:01:49Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58570</id>
+				<title>E:\ -&gt; D:\ Копирование нескольких файлов</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: D:\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;avi.avi&quot;
+- &quot;docx.docx&quot;
+- &quot;exe.exe&quot;
+- &quot;flv.flv&quot;
+- &quot;gif.gif&quot;
+- &quot;jpg.jpg&quot;
+- &quot;mkv.mkv&quot;
+- &quot;mp3.mp3&quot;
+- &quot;mp4.mp4&quot;
+- &quot;pdf.pdf&quot;
+- &quot;png.png&quot;
+- &quot;rar.rar&quot;
+- &quot;txt.txt&quot;
+- &quot;txt.txt — ярлык&quot;
+- &quot;xlsx.xlsx&quot;
+- &quot;zip.zip&quot;
+- &quot;битый файл.docx&quot;
+- &quot;презентация.pptx&quot;
+- &quot;файл без формата&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Файлы скопируются неповреждёнными</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3357</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:14:58Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T15:14:20Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа немного подвисла, но файлы скинулись</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Негативные</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T58576</id>
+				<title>Копирование одного файла дважды</title>
+												<template>Test Case (Steps)</template>
+																<type>Destructive</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;gif.gif&quot;
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;, повторить шаги 1-2 дважды.</content><expected>Программа выдаст предупреждение.</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3403</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:41:40Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Программа просто скопировала файл один раз и не выдала никакого предупреждения</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58573</id>
+				<title>Копирование файла в ту же папку</title>
+												<template>Test Case (Steps)</template>
+																<type>Destructive</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, _содержит_ файлы, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить &quot;Юзкейс 1. Копирование&quot;</content><expected>Программа выдаст предупреждение</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3234</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T14:41:59Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Программа просто скопировала файл один раз и не выдала никакого предупреждения</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58572</id>
+				<title>Копирование удаленного файла из списка</title>
+												<template>Test Case (Steps)</template>
+																<type>Destructive</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файл:
+
+- &quot;Для удаления.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл добавится в программу hardload</expected></step>
+<step>
+<index>2</index><content>В папке C:\Users\a-ero\Desktop\from удалить файл &quot;Для удаления.jpg&quot;.
+Выполнить шаги 3-6 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Программа выдаст ошибку</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3214</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:03:22Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T14:44:09Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа просто зависает и стоит как герой Джона Траволты в &quot;Криминальном чтиве&quot;
+
+https://memepedia.ru/wp-content/uploads/2017/04/61092-YzljOWQ3ZWQ2YQ.gif</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T58575</id>
+				<title>C:\ -&gt; E:\ Копирование файла, когда диск не подключен</title>
+												<template>Test Case (Steps)</template>
+																<type>Destructive</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from 
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: E:\into
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл добавится в программу hardload</expected></step>
+<step>
+<index>2</index><content>Отключить съемный диск Е от компьютера.
+Выполнить шаги 3-6 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Программа выдаст ошибку</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3239</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:03:54Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-11-28T15:03:50Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Программа просто зависает и стоит как герой Джона Траволты в &quot;Криминальном чтиве&quot;
+
+https://memepedia.ru/wp-content/uploads/2017/04/61092-YzljOWQ3ZWQ2YQ.gif</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T58574</id>
+				<title>E:\ -&gt; C:\ Копирование файла, когда диск не подключен</title>
+												<template>Test Case (Steps)</template>
+																<type>Destructive</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: E:\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into 
+
+Убедиться в том, что папка, в которую нужно скопировать тестовые данные, не содержит файлов, которые мы будем использовать в тест-кейсе
+
+Тестовые данные
+
+Файл:
+
+- &quot;jpg.jpg&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Выполнить шаги 1-2 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Файл добавится в программу hardload</expected></step>
+<step>
+<index>2</index><content>Отключить съемный диск Е от компьютера.
+Выполнить шаги 3-6 юзкейса &quot;Юзкейс 1. Копирование&quot;</content><expected>Программа выдаст ошибку</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3238</caseid>
+								<status>Failed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:04:02Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Программа просто зависает и стоит как герой Джона Траволты в &quot;Криминальном чтиве&quot;
+
+https://memepedia.ru/wp-content/uploads/2017/04/61092-YzljOWQ3ZWQ2YQ.gif</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Нефункциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Performance</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нефункциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Тесты безопасности</name>
+		<description></description>
+						<tests>
+																																										<test>
+				<id>T58577</id>
+				<title>Копирование запароленного файла</title>
+												<template>Test Case (Text)</template>
+																<type>Security</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>- Папка, в которой лежат тестовые данные находится по адресу: C:\Users\a-ero\Desktop\from
+- Папка, в которую нужно скопировать тестовые данные находится по адресу: C:\Users\a-ero\Desktop\into
+
+Тестовые данные
+
+Файл:
+
+- &quot;запароленный файл.docx&quot;</preconds>
+										<steps>Выполнить &quot;Юзкейс 1. Копирование&quot;</steps>
+										<expected>Файл скопируется неповреждённым, открыть его можно будет только с помощью пароля</expected>
+									</custom>
+												<caseid>C3243</caseid>
+								<status>Passed</status>
+																<assignedto>na.erofeeva@mail.ru</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-11-28T15:24:13Z</createdon>
+																		<createdby>na.erofeeva@mail.ru</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+		<section>
+		<name>Ryazanov</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Функциональные</name>
+		<description></description>
+									</section>
+		<section>
+		<name>не функциональные</name>
+		<description></description>
+									</section>
+		<section>
+		<name>нагрузочные</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Хлупина</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Katkov</name>
+		<description>&gt;_&lt;</description>
+										<sections>
+		<section>
+		<name>Non-Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Кovrik</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Не функциональные тесты.</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Функциональные тесты</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Нагрузочные тесты.</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>VendorMachine</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Базовые тесты.</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Тесты средней важности.</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Тесты критической важности.</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Davidov V</name>
+		<description>Section of Davidov Vladislav</description>
+										<sections>
+		<section>
+		<name>HardLoad tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non Functional tests</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Kristina</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Non Functional</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Perfomance</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Shandalova</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>func</name>
+		<description></description>
+									</section>
+		<section>
+		<name>nofunc</name>
+		<description></description>
+									</section>
+		<section>
+		<name>perf</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>CALCUTALOR</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Calculator</name>
+		<description></description>
+									</section>
+</sections>
+</run>
