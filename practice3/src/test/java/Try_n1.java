@@ -53,13 +53,13 @@ public class Try_n1 {
 
 
 
-        @Test
-        public void testUno() throws Exception {
-            driver.get(baseUrl);
-            driver.findElement(By.id("cvc-hint-toggle"));
-            Action.
-
-        }
+//        @Test
+//        public void testUno() throws Exception {
+//            driver.get(baseUrl);
+//            driver.findElement(By.id("cvc-hint-toggle"));
+//            Action.
+//
+//        }
 
     @After
     public void tearDown() throws Exception {

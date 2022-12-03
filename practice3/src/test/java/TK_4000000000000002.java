@@ -28,19 +28,24 @@ public class TK_4000000000000002 {
     @Test
     public void testConfirmed() throws Exception {
         driver.get(baseUrl);
-        driver.findElement(By.id("input-card-number")).click();
-        driver.findElement(By.id("input-card-number")).clear();
-        driver.findElement(By.id("input-card-number")).sendKeys("4000 0000 0000 0002");
-        driver.findElement(By.id("input-card-holder")).click();
-        driver.findElement(By.id("input-card-holder")).clear();
-        driver.findElement(By.id("input-card-holder")).sendKeys("JANE DOE");
-        driver.findElement(By.id("card-expires-month")).click();
-        new Select(driver.findElement(By.id("card-expires-month"))).selectByVisibleText("01");
-        driver.findElement(By.id("card-expires-year")).click();
-        new Select(driver.findElement(By.id("card-expires-year"))).selectByVisibleText("2023");
-        driver.findElement(By.id("input-card-cvc")).click();
-        driver.findElement(By.id("input-card-cvc")).clear();
-        driver.findElement(By.id("input-card-cvc")).sendKeys("123");
+        WebElement input_card_number = driver.findElement(By.id("input-card-number"));
+        input_card_number.click();
+        input_card_number.clear();
+        input_card_number.sendKeys("4000 0000 0000 0002");
+        WebElement input_card_holder = driver.findElement(By.id("input-card-holder"));
+        input_card_holder.click();
+        input_card_holder.clear();
+        input_card_holder.sendKeys("JANE DOE");
+        WebElement card_expires_month = driver.findElement(By.id("card-expires-month"));
+        card_expires_month.click();
+        new Select(card_expires_month).selectByVisibleText("01");
+        WebElement card_expires_year = driver.findElement(By.id("card-expires-year"));
+        card_expires_year.click();
+        new Select(card_expires_year).selectByVisibleText("2023");
+        WebElement input_card_cvc = driver.findElement(By.id("input-card-cvc"));
+        input_card_cvc.click();
+        input_card_cvc.clear();
+        input_card_cvc.sendKeys("123");
         driver.findElement(By.id("action-submit")).click();
         driver.findElement(By.id("success")).click();
 
